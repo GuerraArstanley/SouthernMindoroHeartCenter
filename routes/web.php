@@ -18,6 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 
-Route::post('/contact', 'App\Http\Controllers\ContactController@sendEmail')->name('contact.send');
+
+
